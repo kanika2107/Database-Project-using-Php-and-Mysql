@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>
+LOGIN PAGE
+</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
+<body background="2.jpg">
+<script> 
+function fun()
+{
+	console.log("1");
+	p=document.getElementById("usrn");
+	q=document.getElementById("pswd");
+//document.write(p.value);
+//	document.write(q.value);
+	if(p.value=="root")
+	{
+		if(q.value=="Kanikam6")
+		{
+			w=document.getElementById("form");
+			w.setAttribute("action","1a.html");
+		}
+		else
+		{
+			alert("wrong username/passwd");
+		}
+	}
+	else if(p.value=="kanika")
+	{
+		if(q.value=="kanika123")
+		{
+			w=document.getElementById("form");
+			w.setAttribute("action","1.html");
+		}
+		else
+		{
+			alert("wrong username/passwd");
+		}
+	}
+	else if(p.value=="arushi")
+	{
+		if(q.value=="arushi123")
+		{
+		w=document.getElementById("form");
+		w.setAttribute("action","1.html");
+	}
+	else
+		{
+			alert("wrong username/passwd");
+		}
+	}
+	else
+	{
+		alert("wrong username/passwd");
+	}
+}
+</script>    
+<center><h1>LOGIN</h1><br><br><br>
+<form method="post" id="form">
+        <h4> <label for="inputEmail">Username:</label><br></h4>
+	 <input placeholder="username" type="text" id="usrn" size="30"><br><br>
+	<h4> <label for="inputPassword">Password:</label><br></h4>
+	 <input placeholder="password" type="password" id="pswd" size="30"><br><br>
+<!--<button onclick="fun()" type="submit">Login</button>-->
+ <button onclick="fun()" type="submit" class="btn btn-primary">Login</button>
+</form>  
+<br><br><br><br><br>
+</center>
+</body>
+</html>
